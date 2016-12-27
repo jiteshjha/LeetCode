@@ -1,5 +1,3 @@
-//https://leetcode.com/problems/invert-binary-tree/
-
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -12,7 +10,7 @@
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if(root == NULL || (root -> left == NULL && root -> right == NULL))
+        if(root == NULL)
             return root;
         TreeNode * temp = root -> left;
         root -> left = root -> right;
